@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHS portfolio blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* 커스텀 다크 모드 스타일 */
+        body {
+            background-color: #121212; /* 배경색을 어두운 회색으로 설정 */
+            color: #e0e0e0; /* 기본 텍스트 색상을 밝은 회색으로 설정 */
+            padding-top: 56px; /* 고정된 네비게이션바 때문에 생기는 가림 현상 방지 */
+        }
+
+        /* 헤더 섹션 */
+        .bg-primary {
+            background-color: #333333 !important; /* 헤더 배경색을 어둡게 변경 */
+        }
+        
+        /* 내비게이션 바 */
+        .navbar-brand {
+            color: #ffffff; /* 브랜드 로고 색상을 흰색으로 */
+        }
+        
+        .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important; /* 링크 텍스트 색상 */
+        }
+        
+        .navbar-nav .nav-link:hover {
+            color: #ffffff !important; /* 호버 시 링크 텍스트 색상 */
+        }
+        
+        /* 텍스트 및 카드 */
+        .text-white, h1, h2, h5, p {
+            color: #e0e0e0 !important; /* 주요 텍스트 색상 통일 */
+        }
+
+        .list-group-item {
+            background-color: #212121; /* 리스트 아이템 배경색 */
+            color: #e0e0e0;
+            border-color: #444444; /* 경계선 색상 */
+        }
+
+        .card {
+            background-color: #212121; /* 카드 배경색 */
+            color: #e0e0e0;
+            border-color: #444444; /* 카드 경계선 색상 */
+        }
+        
+        .card-body {
+            background-color: #212121;
+        }
+
+        /* 버튼 */
+        .btn-primary {
+            background-color: #4a4a4a;
+            border-color: #4a4a4a;
+        }
+
+        .btn-primary:hover {
+            background-color: #616161;
+            border-color: #616161;
+        }
+        
+        /* 강점 섹션 */
+        .bg-light {
+            background-color: #1e1e1e !important; /* 원래는 밝은 회색이었던 배경을 어둡게 */
+        }
+        
+        .p-3.border.bg-white {
+            background-color: #212121 !important; /* 흰색 배경이었던 카드를 어둡게 */
+            border-color: #444444 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyPage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">소개</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#strength">강점</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">프로젝트</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1>너의 이름은 '미래유망'</h1>
+        <p>형석이의 포트폴리오 업로드용 블로그 ㅎㅎㅎㅎRㅎ</p>
+    </header>
+
+    <section id="about" class="container py-5">
+        <h2 class="text-center mb-4">ABOUT</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="images/shs.png" class="img-fluid rounded-circle" alt="" width="300" height="300" />
+
+            </div>
+            <div class="col-md-8">
+                <p>안녕하세요, 저는 수정고 미래유망(풀스텍 개발자 과정) 1학년 서형석입니다. <br>
+                    현재 HTML/CSS/JAVASCRIPT + Bootstrap/AI 를 활용한 웹페이지 제작을 하고 있습니다. <br> <br>
+
+                    2025년 1학기에는 전공교과 적응과 미래유망 웹 기술, 관심분야 기술을 다양하게 접해보느라 바쁜시간을 보냈습니다. 미래유망 수업은 솔직하게 제 관심분야가 아니었지만,
+                    그래도 한번 시작한김에 열심히 해볼려고 노력해 보았습니다.
+                    <br> <br>
+
+                    그동안 한것들좀 설명하자면 <br> <br>
+
+                    - 미니 PBL Round1 자기소개, 팀원소개 <br>
+                    - 미니 PBL Round2 팀포스터, 팀스토리 <br>
+
+                    그렇게 높은 퀄리티는 아니지만, <br>
+                    최대한 열심히 해볼려고 노력은 해보았다고 생각합니다. <br> <br>
+
+                    현재는, 개인적으로 여러가지 프로젝트를 하고있습니다. 뭐 몆가지 설명 해보자면 끄투를 보고 참고해서 친구들과 가볍게 즐길수있는 "형끄"라던가,
+                    항상 2차 인증 로그인을 해야하는 디스코드를 편하게 할수있는 "형스코드"등을 열심히 개발하고 있습니다.<br><br>
+
+                    제 관심분야는 게임제작이지만, 현재는 친구들과 가볍게 즐길수있도록 여러가지 재밌는 웹사이트를 제작하고 있습니다.<br>
+                    본래 희망 분야가 게임 개발인 만큼, 웹개발을 오랫동안 하는건 힘들겠지만, 그래도 취미삼아 간간히 개발해볼 생각입니다.</p>
+                <ul class="list-group mt-4">
+                    <li class="list-group-item">C#/C+++</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">PYTHON</li>
+                    <li class="list-group-item">Notion</li>
+                    <li class="list-group-item">GitHub(+GitHub Copilot) <a href="https://github.com/SKYRPG8957" class="btn btn-primary" target="_blank">프로필</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div id="carouselExample" class="carousel slide" style="max-width: 800px; margin: auto;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/hscd.png" class="d-block w-100" width="300" height="300" alt="프로젝트 이미지 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/project2.png" class="d-block w-100" width="30" height="300" alt="프로젝트 이미지 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/ab.png" class="d-block w-100" width="300" height="300" alt="추가예정">
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-bg-dark" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="strength" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">I did it my way</h2>
+            <div class="row text-center">
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border bg-white">
+                        <div class="icon-box mb-2">💡</div>
+                        <p>Novelty<br>아무도 생각하지 못한 아이디어</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border bg-white">
+                        <div class="icon-box mb-2">✅</div>
+                        <p>Quality<br>뭐든지 항상 고퀄리티를 지향</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border bg-white">
+                        <div class="icon-box mb-2">⚡</div>
+                        <p>Optimization<br>뭐든 가볍게 만드는 최적화</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="p-3 border bg-white">
+                        <div class="icon-box mb-2">🧩</div>
+                        <p>Applicable<br>대부분이 오픈소스로 어디서든 적용가능</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-4">형스코드</h2>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="images/hscd.png" class="card-img-top" alt="Project1. 미니 PBL Round1 자기소개, 팀원소개">
+                    <div class="card-body">
+                        <h5 class="card-title">형스코드</h5>
+                        <p class="card-text">모든게 무료로 굴러가는 나만의 무법지대.</p>
+                        <a href="https://hsc-chat-system.web.app/" target="_blank" class="btn btn-primary">바로가기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="images/project2.png" class="card-img-top" alt="Project2. 미니 PBL Round2 팀포스터, 팀스토리">
+                    <div class="card-body">
+                        <h5 class="card-title">아이템 생성기</h5>
+                        <p class="card-text">아이템 설명을 JSON형태로 바로 생성!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100">
+                    <img src="images/ab.png" class="card-img-top" alt="Project3. 미니 PBL Round3 팀원모집">
+                    <div class="card-body">
+                        <h5 class="card-title">형끄</h5>
+                        <p class="card-text">형석이만의 추가된 단어들이 구성된 끝말잇기!</p>
+                        <a href="" target="_blank" class="btn btn-primary">지원예정</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2025년도 포트폴리오 블로그
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>

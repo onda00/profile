@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 기반 소개 페이지</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  
+  <!--x창 -->
+  <label>
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    창끄기
+  </label>
+<!--nav창 (움직임) -->
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary ">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#">
+    <!--이미지 + My Page -->
+    <img src="https://m.maniahouse.co.kr/web/product/big/202409/ad628e29b433588b450d2c11c77eca88.jpg" alt="Logo" width="40" height="47" class="d-inline-block align-text-top">
+    My Page</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#about">소개</a>
+      </li>
+      <!--강점 이동창 -->
+      <li class="nav-item">
+        <a class="nav-link" href="#strength">강점</a>
+      </li>
+      <!--프로젝트 이동창 -->
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">프로젝트</a>
+      </li>
+      <!--ㄱㅇㅇ창 -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ㄱㅇㅇ
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://namu.wiki/w/%EB%AA%A8%EB%8D%94%EB%8B%88%EC%95%84" target="_blank">모더니아</a></li>
+          <li><a class="dropdown-item" href="https://namu.wiki/w/%EC%BD%98%ED%8C%8C%EC%BF%A0%20%EC%9A%94%EC%9A%B0%EB%AC%B4?from=%EC%9A%94%EC%9A%B0%EB%AC%B4" target="_blank">요우무</a></li>
+          <li><a class="dropdown-item" href="https://namu.wiki/w/%EB%AF%B8%EC%86%8C%EB%85%B8%20%EB%AF%B8%EC%B9%B4?from=%EB%AF%B8%EC%B9%B4%28%EB%B8%94%EB%A3%A8%20%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B8%8C%29" target="_blank">미카</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+  <header class="bg-primary text-white text-center py-5 mt-5">
+    <h1>너의 이름은 '미래유망'</h1>
+    <p>모더니아와 함깨하는 연후의 포트폴리오</p>
+  </header>
+<br>
+<!--메시지창(몬만듬) -->
+<button type="button" class="btn btn-primary position-relative" id="#about">
+ㅁㄷㄴㅇ에게 온 메시지
+<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+  99+
+  <span class="visually-hidden">unread messages</span>
+</span>
+</button>
+
+  <section id="about" class="container py-5">
+    <h2 class="text-center mb-4">ABOUT</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="images/kyh.jpg"
+          class="img-fluid rounded-circle" alt="이미지" />
+      </div>
+      <div class="col-md-8">
+        <p>안녕하세요, 저는 수정고등학교 미래유망(풀스택 개발자 과정) 1학년 김연후입니다.
+현재 HTML, CSS, JavaScript와 Bootstrap, 그리고 AI 기술을 활용한 웹페이지 제작을 배우고 있으며, 실무에 가까운 경험을 쌓아가고 있습니다.
+<br>
+<br>
+📚 2025년 1학기 활동
+<br>
+1학기에는 전공 교과에 적응하면서 미래유망 웹 기술과 다양한 관심 분야 기술을 접하는 데 집중했습니다. <br><br>
+특히 미니 PBL 프로젝트를 통해 팀 활동의 중요성과 협업의 가치를 몸소 배울 수 있었습니다. 처음에는 낯설고 어려웠지만, 선생님과 친구들과의 상호 존중 속에서 함께 성장할 수 있는 힘을 얻었습니다.<br><br>
+
+그 결과로 다음과 같은 산출물을 만들었습니다:
+<br><br>
+미니 PBL Round 1: 자기소개 페이지 및 팀원 소개
+<br><br>
+미니 PBL Round 2: 팀 포스터 및 팀 스토리 제작
+<br><br>
+교내 웹디자인 경진대회: 학생 승인/검색 기능 프론트엔드 구현
+<br><br>
+또한, 여름방학 동안에는 선생님께서 주도하신 “Summer Vacation Wellcome Dalant” 복습 챌린지에 참여하여, 자기 주도 학습과 기술 습득의 루틴을 형성할 수 있었습니다.
+<br><br>
+🛠 현재 진행 중인 프로젝트<br>
+
+현재는 미니 PBL Round 3 – 팀원 모집 웹 페이지를 위한 팀 빌딩과 기획을 진행 중이며,<br>
+JavaScript 기술을 집중적으로 학습하여 더 확장된 사용자 경험을 제공하는 웹 페이지를 구현하려고 노력하고 있습니다.
+<br><br>
+🎮 나의 관심 분야 – 게임 제작<br><br>
+저는 궁극적으로 게임 제작에 관심이 있습니다.<br>
+하지만 현재는 실용적이고 범용적인 웹 개발 기술에 집중하며, 차후 게임 개발 분야로 확장할 수 있는 기반을 다지고 있습니다.<br>
+체력적으로 쉽지 않을 때도 있지만, 기술 하나씩 익혀갈 때마다 느끼는 보람과 성취감이 저를 계속해서 성장하게 만듭니다.<br>
+<br><br>
+앞으로도 꾸준히 배우고, 협력하며, 최선을 다해 성장해 나가겠습니다.</p>
+        <ul class="list-group mt-4">
+          <li class="list-group-item">HTML/CSS</li>
+          <li class="list-group-item">JavaScript</li>
+          <li class="list-group-item">Bootstrap</li>
+          <li class="list-group-item">Notion</li>
+          <li class="list-group-item">Figma</li>
+          <li class="list-group-item">GitHub(+GitHub Copilot)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--버튼 색 바꿈 -->
+  <section>
+    <div class="container_fluid">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/project1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/project2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/project3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev text-bg-dark" type="button" data-bs-target="#carouselExample"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next text-bg-dark" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <section id="strength" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4">STRENGTH</h2>
+        <div class="row text-center">
+          <div class="col-6 col-md-3">
+            <div class="p-3 border bg-white">
+              <div class="icon-box mb-2">💡</div>
+              <p>아이디어 좋음!</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="p-3 border bg-white">
+              <div class="icon-box mb-2">✅</div>
+              <p>퀄리티 높음!</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="p-3 border bg-white">
+              <div class="icon-box mb-2">⚡</div>
+              <p>학습이 빠름!</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="p-3 border bg-white">
+              <div class="icon-box mb-2">🧩</div>
+              <p>다 잘함!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- 버튼 넣음 -->
+    <section id="projects" class="container py-5">
+      <h2 class="text-center mb-4">PROJECTS</h2>
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="images/project1.png" class="card-img-top" alt="Project1. 미니 PBL Round1 자기소개, 팀원소개">
+            <div class="card-body">
+              <h5 class="card-title">Project1</h5>
+              <p class="card-text">미니 PBL Round1 자기소개, 팀원소개</p>
+              <a href="#" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="images/project2.png" class="card-img-top" alt="Project2. 미니 PBL Round2 팀포스터, 팀스토리">
+            <div class="card-body">
+              <h5 class="card-title">Project2</h5>
+              <p class="card-text">미니 PBL Round2 팀포스터, 팀스토리</p>
+              <a href="#" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="card h-100">
+            <img src="images/project3.png" class="card-img-top" alt="Project3. 미니 PBL Round3 팀원모집">
+            <div class="card-body">
+              <h5 class="card-title">Project3</h5>
+              <p class="card-text">미니 PBL Round3 팀원모집</p>
+              <a href="#" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container py-5">
+      <h2 class="text-center mb-4">Summer Vacation Wellcome Dalant</h2>
+      <div class="row g-4">
+
+<div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/스크린샷 2025-08-07 153643.png" class="card-img-top" alt="Summer_Vacation_Day1">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day2</h5>
+              <p class="card-text">
+              <pre>HTML form 태그를 활용하여
+'온라인 동아리 신청서'를 제작한다.
+1. form 태그 기본 구조
+2. input type 5가지 실습
+3. label 연결 연습
+4. button 종류별 차이
+5. radio, checkbox 비교
+6. textarea 실습
+7. select, option 실습
+8. form action 이해
+9. submit 동작 실습
+10. form 안에 div 구조</pre>
+              </p>
+              <a href="../Day1 10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/Summer_Vacation_Day2.png" class="card-img-top" alt="Summer_Vacation_Day2">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day2</h5>
+              <p class="card-text">
+              <pre>HTML form 태그를 활용하여
+'온라인 동아리 신청서'를 제작한다.
+1. form 태그 기본 구조
+2. input type 5가지 실습
+3. label 연결 연습
+4. button 종류별 차이
+5. radio, checkbox 비교
+6. textarea 실습
+7. select, option 실습
+8. form action 이해
+9. submit 동작 실습
+10. form 안에 div 구조</pre>
+              </p>
+              <a href="../Day2_10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/Summer_Vacation_Day3.png" class="card-img-top" alt="Summer_Vacation_Day3">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day3</h5>
+              <p class="card-text">
+              <pre>CSS 선택자를 활용해 '소개 페이지'의 특정 요소를
+스타일링 한다. Day 1: HTML 구조 복습 
+'나를 소개하는 웹페이지' 를 복제하여 
+10개의 선택자가 모두 활용되도록 한다.
+1. 전체 선택자 * 실습
+2. 태그 선택자 div/p/h1
+3. 클래스 선택자 .box
+4. id 선택자 #main
+5. 자식 선택자 연습
+6. 형제 선택자 연습
+7. 그룹 선택자 실습
+8. 속성 선택자 연습
+9. 의사클래스 :hover
+10. 의사요소 ::before</pre>
+              </p>
+              <a href="../Day3 10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/Summer_Vacation_Day4.png" class="card-img-top" alt="Summer_Vacation_Day4">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day4</h5>
+              <p class="card-text">
+              <pre>CSS 박스모델을 활용하여 '이벤트 안내 배너'의 
+레이아웃을 완성한다.
+1. margin 실습
+2. padding 실습
+3. border 실습
+4. width/height 설정
+5. box-sizing 이해
+6. div 사이 간격 조절
+7. border-radius 적용
+8. overflow 처리
+9. display 속성 비교
+10. box-model 시각화</pre>
+              </p>
+              <a href="../Day4 10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/Summer_Vacation_Day5.png" class="card-img-top" alt="Summer_Vacation_Day5">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day5</h5>
+              <p class="card-text">
+              <pre>Flexbox를 사용하여 '상품목록' 레이아웃을 
+하드코딩으로 제작한다.
+1. flex-container 만들기
+2. flex-direction 4종 비교
+3. justify-content 실습
+4. align-items 실습
+5. gap 속성 추가
+6. item flex:1 적용
+7. column 방향 예제
+8. wrap 예제
+9. align-self 실습
+10. flex 응용 배치</pre>
+              </p>
+              <a href="../Day5 10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="card h-100">
+            <img src="images/Summer_Vacation_Day6.png" class="card-img-top" alt="Summer_Vacation_Day6">
+            <div class="card-body">
+              <h5 class="card-title">Summer_Vacation_Day6</h5>
+              <p class="card-text">
+              <pre>Bootstrap의 그리드 시스템을 활용하여 
+'상품목록' 레이아웃을 제작한다.
+1. container vs fluid
+2. row, col 기본 예제
+3. col-6 col-12 실습
+4. 중단점 sm~xl 적용
+5. gutter 간격 조절
+6. Bootstrap 연결법
+7. CDN 사용법
+8. viewport 설정
+9. Bootstrap 구조 요약
+10. 그리드 응용</pre>
+              </p>
+              <a href="../Day6  10804김연후/index_student.html" class="btn btn-primary">Go page</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <footer class="bg-dark text-white text-center py-3">
+      &copy; 2025 모더니아와 함깨하는 사이퉁
+    </footer> -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4 position-relative">
+  <div class="container">
+    <div class="mb-2">
+      <a href="https://namu.wiki/w/%EB%8F%84%EB%A1%9C%EC%8B%9C(%EC%8A%B9%EB%A6%AC%EC%9D%98%20%EC%97%AC%EC%8B%A0:%20%EB%8B%88%EC%BC%80)" target="_blank" class="text-white mx-2">
+        <img height="30" width="30" class="rounded-circle" src="https://i.namu.wiki/i/eO46Cop5oqBCK4jQxuufCVPFBdsnswVNlXN_S7Ja5_kb7hYd8qpMJEAnpO5ko-ilUgrES_2vSXAmwlklls-GxQ.webp" alt="">
+      </a>
+      <a href="https://namu.wiki/w/%EB%8F%84%EB%A1%9C%EC%8B%9C(%EC%8A%B9%EB%A6%AC%EC%9D%98%20%EC%97%AC%EC%8B%A0:%20%EB%8B%88%EC%BC%80)" target="_blank" class="text-white mx-2">
+        <img height="30" width="30" class="rounded-circle" src="https://i.namu.wiki/i/eO46Cop5oqBCK4jQxuufCVPFBdsnswVNlXN_S7Ja5_kb7hYd8qpMJEAnpO5ko-ilUgrES_2vSXAmwlklls-GxQ.webp" alt="">
+      </a>
+      <a href="https://namu.wiki/w/%EB%8F%84%EB%A1%9C%EC%8B%9C(%EC%8A%B9%EB%A6%AC%EC%9D%98%20%EC%97%AC%EC%8B%A0:%20%EB%8B%88%EC%BC%80)" target="_blank" class="text-white mx-2">
+        <img height="30" width="30" class="rounded-circle" src="https://i.namu.wiki/i/eO46Cop5oqBCK4jQxuufCVPFBdsnswVNlXN_S7Ja5_kb7hYd8qpMJEAnpO5ko-ilUgrES_2vSXAmwlklls-GxQ.webp" alt="">
+      </a>
+      <a href="https://namu.wiki/w/%EB%8F%84%EB%A1%9C%EC%8B%9C(%EC%8A%B9%EB%A6%AC%EC%9D%98%20%EC%97%AC%EC%8B%A0:%20%EB%8B%88%EC%BC%80)" target="_blank" class="text-white mx-2">
+        <img height="30" width="30" class="rounded-circle" src="https://i.namu.wiki/i/eO46Cop5oqBCK4jQxuufCVPFBdsnswVNlXN_S7Ja5_kb7hYd8qpMJEAnpO5ko-ilUgrES_2vSXAmwlklls-GxQ.webp" alt="">
+      </a>
+    </div>
+    <p class="mb-0">
+      &copy; 2025 <strong>모더니아와 함께하는 사이퉁</strong>
+    </p>
+  </div>
+
+  <!-- ㅅㅅㅅ -->
+  <a href="#" class="position-absolute end-0 bottom-0 p-3 text-white">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
